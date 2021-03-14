@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+
   skip_before_action :authorized, only: [:new, :create]
   
   def new
@@ -12,4 +12,3 @@ class UsersController < ApplicationController
     redirect_to '/welcome'
   end
 end
-
